@@ -42,7 +42,7 @@ export default function GuestSOSApp() {
     };
 
     try {
-      const response = await fetch("https://bbc3bcf3-462f-4d63-b9f7-a4d234d06bce-00-2mvw0ro8a4hpz.sisko.replit.dev/api/sos", {
+      const response = await fetch("https://rapid-sos-backend-production.up.railway.app/api/sos", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),

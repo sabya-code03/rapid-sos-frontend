@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { io } from "socket.io-client";
 
 // Ye tere backend se judne ka direct connection hai
-const socket = io("https://bbc3bcf3-462f-4d63-b9f7-a4d234d06bce-00-2mvw0ro8a4hpz.sisko.replit.dev"); 
+const socket = io("https://rapid-sos-backend-production.up.railway.app"); 
 
 export default function AdminDashboard() {
   const [alerts, setAlerts] = useState<any[]>([]);
