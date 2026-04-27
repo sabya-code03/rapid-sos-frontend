@@ -28,7 +28,8 @@ export default function GuestSOSApp() {
   }, []);
 
   // CONCEPT 2: Build Payload and Fire to Backend
-  const triggerSOS = async () => {
+  const triggerSOS = async (e: any) => {
+    if (e) e.preventDefault(); // Ye line sabse zaroori hai!
     setSendStatus("sending");
     
     // Combining Quick Action + Details for Gemini
